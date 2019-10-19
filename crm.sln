@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.Web", "CRM.Web\CRM.Web.csproj", "{D5245DF3-0466-4666-A2D2-E724AE21F6E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.Core", "CRM.Core\CRM.Core.csproj", "{EC9106E2-9814-4E2A-BDED-C2CD39C25C0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.DomainModel", "CRM.DomainModel\CRM.DomainModel.csproj", "{821DC5B1-9F93-4222-A9A8-52121FC83C0B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5245DF3-0466-4666-A2D2-E724AE21F6E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5245DF3-0466-4666-A2D2-E724AE21F6E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5245DF3-0466-4666-A2D2-E724AE21F6E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5245DF3-0466-4666-A2D2-E724AE21F6E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC9106E2-9814-4E2A-BDED-C2CD39C25C0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC9106E2-9814-4E2A-BDED-C2CD39C25C0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC9106E2-9814-4E2A-BDED-C2CD39C25C0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC9106E2-9814-4E2A-BDED-C2CD39C25C0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{821DC5B1-9F93-4222-A9A8-52121FC83C0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{821DC5B1-9F93-4222-A9A8-52121FC83C0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{821DC5B1-9F93-4222-A9A8-52121FC83C0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{821DC5B1-9F93-4222-A9A8-52121FC83C0B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E50E9AC0-F643-4594-B680-912E199B40A9}
+	EndGlobalSection
+EndGlobal
