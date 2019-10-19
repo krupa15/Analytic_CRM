@@ -1,0 +1,27 @@
+<div class="container" style="margin:10px">
+        <h2>Add Customer</h2>
+        <div>
+            <form >
+                <div class="form-group">
+                    <label for="Name">Name</label>
+                    <input type="text" id="Name" [(ngModel)]="customer.name" [ngModelOptions]="{standalone: true}"
+                        class="form-control">
+                    <p id="eName" style="color:red"></p>
+                </div>
+                <div class="form-group">
+                    <label for="Emial">Emial</label>
+                    <input type="email" id="Emial" [(ngModel)]="customer.email" [ngModelOptions]="{standalone: true}"
+                        class="form-control">
+                    <p id="eEmial" style="color:red"></p>
+                </div>
+                <div class="form-group">
+                    <label for="ContactNumber">Contact Number</label>
+                    <input type="number" id="ContactNumber" [(ngModel)]="customer.contactNumber" [ngModelOptions]="{standalone: true}"
+                        class="form-control">
+                    <p id="eContactNumber" style="color:red"></p>
+                </div>
+                <button id="submit" (click)="Add()" class="btn btn-primary">Create</button>&nbsp;
+                <a [routerLink]="['/customer']" class="btn btn-primary">Cancel</a>
+            </form>
+        </div>
+    </div>

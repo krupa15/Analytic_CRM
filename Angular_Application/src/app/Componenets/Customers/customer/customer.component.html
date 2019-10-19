@@ -1,0 +1,49 @@
+<div class="row">
+  <div class="col-md-10 borderWhole">
+    <h1>Customer</h1>
+  </div>
+  <div class="col-md-2" style="margin-top:22px;">
+    <a [routerLink]="['/addCustomer']">
+      <mat-icon class="add_button">add</mat-icon>Add new Customer
+    </a>
+    &nbsp;&nbsp;&nbsp;
+  </div>
+</div>
+<!--<app-customer-table></app-customer-table>-->
+<div class="row">
+  <div class="col-md-11" *ngIf="Customers.length>0"><br>
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope ="col">Contact</th>
+          <th scope="col">#</th>
+          <th scope="col">#</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let c of Customers,let i=index">
+          <th scope="row">{{i}}</th>
+          <td>{{c.name}}</td>
+          <td>{{c.email}}</td>
+          <td>{{c.contactNumber}}</td>
+          <td>
+            <button (click)="edit(c)">
+              <mat-icon class="editPen">edit</mat-icon>
+            </button>
+            </td>
+            <td>
+              <button (click)="delete(c.id)">
+                <mat-icon class="deleteIcon">delete</mat-icon>
+              </button>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div *ngIf="Customers.length==0">
+    <h3>No Customers are available</h3>
+  </div>
+</div>

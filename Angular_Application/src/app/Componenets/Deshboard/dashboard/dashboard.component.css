@@ -1,0 +1,39 @@
+.cardOne {
+    background-color: aqua;
+    height: 130px;
+    border-radius: 5px;
+}
+.col-md-3 {
+    width: 23%;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+h4{
+    padding-top: 10px;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+}
+.moreInfo {
+    float: left;
+    font-weight: bold;
+    margin-top: 30px;
+    padding-left: 40px;
+}
+.fl {
+    float: left;
+}
+h1 {
+    margin-top: 10px;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+}
+span {
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+}
+.chart {
+    width:500px;
+    height: 500px;
+    margin-left: 10px;
+}
+.dashboardIcon {
+    margin: 7px;
+    vertical-align: sub;
+}

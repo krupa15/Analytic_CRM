@@ -1,0 +1,52 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 sidebar" *ngIf="login==true">
+            <br>
+            <ul class="list-group">
+                <a [routerLink]="'/'">
+                    <li class="list-group-item">
+                        <mat-icon class="sidebarIcon">home</mat-icon>Dashboard
+                    </li>
+                </a>
+                <a [routerLink]="['/customer']">
+                    <li class="list-group-item">
+                        <mat-icon class="sidebarIcon">assignment_ind</mat-icon>Customer
+                    </li>
+                </a>
+                <a [routerLink]="['/order']">
+                    <li class="list-group-item">
+                        <mat-icon class="sidebarIcon">shopping_cart</mat-icon>Order
+                    </li>
+                </a>
+                <a [routerLink]="['/product']">
+                    <li class="list-group-item">
+                        <mat-icon class="sidebarIcon">redeem</mat-icon>Product
+                    </li>
+                </a>
+                <a [routerLink]="['/about']">
+                    <li class="list-group-item">
+                        <mat-icon class="sidebarIcon">announcement</mat-icon>About
+                    </li>
+                </a>
+                <a (click)="logOut()">
+                    <li class="list-group-item">
+                        <mat-icon class="sidebarIcon">logout</mat-icon>Log Out
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <div class="col-md-2 sidebar" *ngIf="login==false">
+                <a [routerLink]="['/login']">
+                    <li class="list-group-item">
+                        <mat-icon class="sidebarIcon">logout</mat-icon>Log in
+                    </li>
+                </a>
+                <a [routerLink]="['/register']">
+                    <li class="list-group-item">
+                        <mat-icon class="sidebarIcon">add</mat-icon>Register
+                    </li>
+                </a>
+        </div>
+
+    </div>
+</div>

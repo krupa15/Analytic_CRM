@@ -1,0 +1,18 @@
+.borderWhole {
+    border: 5px 0 5px 12px #eee;
+}
+h1{
+    color: red;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    font-weight: bold;
+}
+.thead-dark {
+    background-color: #1d1e22;
+    color: white;
+}
+.memYes {
+    color: #32CD32;
+}
+.memNo {
+    color: red;
+}

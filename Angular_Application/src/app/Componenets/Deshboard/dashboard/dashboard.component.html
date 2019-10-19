@@ -1,0 +1,40 @@
+<br><br>
+<div class="row">
+    <div class="col-md-12">
+        <div class="col-md-3 cardOne">
+            <h4>
+                <mat-icon class="dashboardIcon">person</mat-icon>Customer Registrations
+            </h4>
+            <h1 class="fl">{{Customers.length}}</h1>
+            
+        </div>
+        <div class="col-md-3 cardOne">
+            <h4>
+                <mat-icon class="dashboardIcon">add_shopping_cart</mat-icon>New Orders
+            </h4>
+            <h1 class="fl">{{Orders.length}}</h1>
+            
+        </div>
+        <div class="col-md-3 cardOne">
+            <h4>
+                <mat-icon class="dashboardIcon">add_shopping_cart</mat-icon>Products
+            </h4>
+            <h1 class="fl">
+                {{Products.length}}
+            </h1>
+            
+        </div>
+
+    </div>
+</div>
+<br><br><br><br>
+<div class="row">
+    <div class="col-md-12" style="box-shadow:0px 0px 5px 5px #eee;">
+        <div class="col-md-6">
+            <canvas id="lineChart"></canvas>
+        </div>
+        <div class="col-md-6">
+            <canvas id="barChart"></canvas>
+        </div>
+    </div>
+</div>

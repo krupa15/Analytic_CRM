@@ -1,0 +1,25 @@
+.sidebar {
+    width: 14%;
+}
+@media (min-width: 992px) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 1000;
+        display: block;
+        background-color: #1d1e22;
+    }
+}   
+.list-group-item {
+    color: aqua;
+    background-color: transparent;
+    border: none;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    font-size: 18px;
+}
+.sidebarIcon {
+    margin: 7px;
+    vertical-align: sub;
+}

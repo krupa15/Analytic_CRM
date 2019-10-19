@@ -1,0 +1,54 @@
+<div class="row">
+  <div class="col-md-10 borderWhole">
+    <h1>Orders</h1>
+  </div>
+  <div class="col-md-2" style="margin-top:22px;">
+    <a [routerLink]="['/addOrder']">
+      <mat-icon class="add_button">add</mat-icon>Add new Order
+    </a>
+    &nbsp;&nbsp;&nbsp;
+  </div>
+</div>
+<!--<app-order-table></app-order-table>-->
+<div class="row">
+  <div class="col-md-11" *ngIf="Orders.length>0"><br>
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Product</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Amount</th>
+          <th scope="col">Customer</th>
+          <th scope="col">Order Date</th>
+          <th scope="col">Shipped Date</th>
+          <th scope="col">#</th>
+          <th scope="col">#</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr *ngFor="let o of Orders,let i =index">
+          <th scope="row">{{i}}</th>
+          <td>{{o.product}}</td>
+          <td>{{o.quantity}}</td>
+          <td>{{o.amount}}</td>
+          <td>{{o.customer}}</td>
+          <td>{{o.placedDate}}</td>
+          <td>{{o.shippedDate}}</td>
+          <td>
+              <button (click)="edit(o)">
+              <mat-icon class="editPen" >edit</mat-icon></button>
+            </td>
+            <td>
+                <button (click)="delete(o.id)">
+              <mat-icon class="deleteIcon" >delete</mat-icon></button>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div *ngIf="Orders.length==0">
+      <h3>No Orders are available</h3>
+    </div>
+</div>

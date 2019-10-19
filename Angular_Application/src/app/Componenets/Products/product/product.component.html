@@ -1,0 +1,49 @@
+<div class="row">
+  <div class="col-md-10 borderWhole">
+    <h1>Product</h1>
+  </div>
+  <div class="col-md-2" style="margin-top:22px;">
+    <a [routerLink]="['/addProduct']">
+      <mat-icon class="add_button">add</mat-icon>Add new Product
+    </a>
+    &nbsp;&nbsp;&nbsp;
+  </div>
+</div>
+<!--<app-product-table></app-product-table>-->
+<div class="row">
+  <div class="col-md-11" *ngIf="Products.length>0"><br>
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Product Name</th>
+          <th scope="col">Price (Rs)</th>
+          <th scope="col">Quantity in stock</th>
+          <th scope="col">Category</th>
+          <th scope="col">#</th>
+          <th scope="col">#</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let i of Products,let ix=index">
+        <tr >
+          <th scope="row">{{ix+1}}</th>
+          <td>{{i.name}}</td>
+          <td>{{i.price}}</td>
+          <td>{{i.quantity}}</td>
+          <td>{{i.catagory}}</td>
+          <td>
+            <button (click)="edit(i)">
+            <mat-icon class="editPen" >edit</mat-icon></button>
+          </td>
+          <td>
+              <button (click)="delete(i.id)">
+            <mat-icon class="deleteIcon" >delete</mat-icon></button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div *ngIf="Products.length==0">
+    <h3>No products are available</h3>
+  </div>
+</div>
